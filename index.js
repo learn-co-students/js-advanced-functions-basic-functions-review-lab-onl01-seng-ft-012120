@@ -14,9 +14,39 @@ function wrapAdjective(wrapper= "*"){
   return (
     function (adj= "special"){
     
-      return  `You are ${wrapper}${adj} ${wrapper}!`
+      return  `You are ${wrapper}${adj}${wrapper}!`
       
     }
   )
 }
-// "You are %a dedicated programmer%!"
+let Calculator = {
+
+add : function(num1,num2){
+
+  return num1 + num2
+},
+subtract : function(num1,num2){
+
+  return num1 - num2
+},
+multiply : 
+function(num1,num2){
+
+  return num1 * num2
+},
+divide : 
+function(num1,num2){
+
+  return num1 / num2
+},
+
+}
+
+function actionApplyer(integer,array){
+for (let i = 0; i < array.length; i++){
+   integer = array[i](integer) 
+
+}
+
+return integer
+}
